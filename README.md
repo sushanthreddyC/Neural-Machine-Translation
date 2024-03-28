@@ -32,7 +32,7 @@
 
 ## Installation and Usage
 - Clone the repository.
-- Install dependencies: pip install -r requirements.txt.
-- Run the Flask app: python app.py.
-- For training the model, execute: python train.py.
-- To evaluate the model on new data, use: python main.py.
+- Install dependencies: `pip install -r requirements.txt`.
+- Run the Flask app: `python app.py`.
+- For training the model, execute: `python train.py`.
+- To evaluate the model on new data, use:`python main.py`.
