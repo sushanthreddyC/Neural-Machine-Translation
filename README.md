@@ -1,7 +1,12 @@
 # Neural-Machine-Translation
 
 ## Objective
-- The objective of this project was to create a deep learning model capable of computing the derivative of a given function with respect to a specified variable. This challenge aims to showcase machine learning expertise, specifically avoiding heuristics or rule-based solutions. The project was initiated with a dataset provided in a Google Drive link, containing various examples of functions and their derivatives.
+- The objective of this project was to create a deep learning model capable of computing the derivative of a given function with respect to a specified variable.
+- This challenge aims to showcase machine learning expertise, specifically avoiding heuristics or rule-based solutions.
+-  sample: `d(6exp^(9a)+4exp^(2a))/da=54exp^(9a)+8exp^(2a)`
+- `6exp^(9a)+4exp^(2a)` is the function
+- `d(...)/da` means "take the derivative of the function with respect to `a`"
+- `54exp^(9a)+8exp^(2a)` is the derivative of the input function
 
 ## About the Project
 - I employed a deep learning framework using TensorFlow and TensorFlow Text for processing and model development. The approach included several key steps:
