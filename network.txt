@@ -1,0 +1,83 @@
+1) Accuracy on a portion of training data:
+The train.txt was split into 3 parts train(70%), validation(15%), test(15%)
+
+Performance on train and validation :
+
+Epoch 1/100
+2000/2000 [==============================] - 78s 31ms/step - loss: 0.3470 - masked_acc: 0.8835 - masked_loss: 0.3470 - val_loss: 0.1547 - val_masked_acc: 0.9460 - val_masked_loss: 0.1547
+Epoch 2/100
+2000/2000 [==============================] - 60s 30ms/step - loss: 0.1294 - masked_acc: 0.9549 - masked_loss: 0.1294 - val_loss: 0.1034 - val_masked_acc: 0.9635 - val_masked_loss: 0.1034
+Epoch 3/100
+2000/2000 [==============================] - 61s 30ms/step - loss: 0.0901 - masked_acc: 0.9690 - masked_loss: 0.0901 - val_loss: 0.0776 - val_masked_acc: 0.9737 - val_masked_loss: 0.0776
+Epoch 4/100
+2000/2000 [==============================] - 69s 35ms/step - loss: 0.0686 - masked_acc: 0.9769 - masked_loss: 0.0686 - val_loss: 0.0610 - val_masked_acc: 0.9795 - val_masked_loss: 0.0610
+Epoch 5/100
+2000/2000 [==============================] - 63s 32ms/step - loss: 0.0554 - masked_acc: 0.9817 - masked_loss: 0.0554 - val_loss: 0.0493 - val_masked_acc: 0.9839 - val_masked_loss: 0.0493
+Epoch 6/100
+2000/2000 [==============================] - 60s 30ms/step - loss: 0.0466 - masked_acc: 0.9847 - masked_loss: 0.0466 - val_loss: 0.0437 - val_masked_acc: 0.9858 - val_masked_loss: 0.0437
+Epoch 7/100
+2000/2000 [==============================] - 59s 30ms/step - loss: 0.0414 - masked_acc: 0.9865 - masked_loss: 0.0414 - val_loss: 0.0403 - val_masked_acc: 0.9871 - val_masked_loss: 0.0403
+Epoch 8/100
+2000/2000 [==============================] - 61s 30ms/step - loss: 0.0374 - masked_acc: 0.9879 - masked_loss: 0.0374 - val_loss: 0.0382 - val_masked_acc: 0.9878 - val_masked_loss: 0.0382
+Epoch 9/100
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.0336 - masked_acc: 0.9890 - masked_loss: 0.0336 - val_loss: 0.0345 - val_masked_acc: 0.9890 - val_masked_loss: 0.0345
+Epoch 10/100
+2000/2000 [==============================] - 61s 31ms/step - loss: 0.0319 - masked_acc: 0.9897 - masked_loss: 0.0319 - val_loss: 0.0350 - val_masked_acc: 0.9888 - val_masked_loss: 0.0350
+Epoch 11/100
+2000/2000 [==============================] - 63s 31ms/step - loss: 0.0301 - masked_acc: 0.9903 - masked_loss: 0.0301 - val_loss: 0.0337 - val_masked_acc: 0.9897 - val_masked_loss: 0.0337
+Epoch 12/100
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.0281 - masked_acc: 0.9909 - masked_loss: 0.0281 - val_loss: 0.0305 - val_masked_acc: 0.9903 - val_masked_loss: 0.0305
+Epoch 13/100
+2000/2000 [==============================] - 61s 30ms/step - loss: 0.0276 - masked_acc: 0.9912 - masked_loss: 0.0276 - val_loss: 0.0295 - val_masked_acc: 0.9909 - val_masked_loss: 0.0295
+Epoch 14/100
+2000/2000 [==============================] - 61s 31ms/step - loss: 0.0257 - masked_acc: 0.9917 - masked_loss: 0.0257 - val_loss: 0.0275 - val_masked_acc: 0.9914 - val_masked_loss: 0.0275
+Epoch 15/100
+2000/2000 [==============================] - 60s 30ms/step - loss: 0.0255 - masked_acc: 0.9918 - masked_loss: 0.0255 - val_loss: 0.0262 - val_masked_acc: 0.9917 - val_masked_loss: 0.0262
+Epoch 16/100
+2000/2000 [==============================] - 62s 31ms/step - loss: 0.0246 - masked_acc: 0.9921 - masked_loss: 0.0246 - val_loss: 0.0263 - val_masked_acc: 0.9916 - val_masked_loss: 0.0263
+Epoch 17/100
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.0235 - masked_acc: 0.9924 - masked_loss: 0.0235 - val_loss: 0.0265 - val_masked_acc: 0.9915 - val_masked_loss: 0.0265
+Epoch 18/100
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.0235 - masked_acc: 0.9925 - masked_loss: 0.0235 - val_loss: 0.0257 - val_masked_acc: 0.9919 - val_masked_loss: 0.0257
+Epoch 19/100
+2000/2000 [==============================] - 60s 30ms/step - loss: 0.0227 - masked_acc: 0.9927 - masked_loss: 0.0228 - val_loss: 0.0288 - val_masked_acc: 0.9911 - val_masked_loss: 0.0288
+Epoch 20/100
+2000/2000 [==============================] - 55s 28ms/step - loss: 0.0222 - masked_acc: 0.9929 - masked_loss: 0.0222 - val_loss: 0.0244 - val_masked_acc: 0.9923 - val_masked_loss: 0.0244
+Epoch 21/100
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.0219 - masked_acc: 0.9929 - masked_loss: 0.0219 - val_loss: 0.0258 - val_masked_acc: 0.9920 - val_masked_loss: 0.0258
+Epoch 22/100
+2000/2000 [==============================] - 60s 30ms/step - loss: 0.0210 - masked_acc: 0.9933 - masked_loss: 0.0210 - val_loss: 0.0255 - val_masked_acc: 0.9921 - val_masked_loss: 0.0255
+Epoch 23/100
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.0213 - masked_acc: 0.9932 - masked_loss: 0.0213 - val_loss: 0.0236 - val_masked_acc: 0.9925 - val_masked_loss: 0.0236
+Epoch 24/100
+2000/2000 [==============================] - 61s 31ms/step - loss: 0.0209 - masked_acc: 0.9933 - masked_loss: 0.0209 - val_loss: 0.0234 - val_masked_acc: 0.9926 - val_masked_loss: 0.0234
+Epoch 25/100
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.0201 - masked_acc: 0.9935 - masked_loss: 0.0201 - val_loss: 0.0247 - val_masked_acc: 0.9923 - val_masked_loss: 0.0247
+Epoch 26/100
+2000/2000 [==============================] - 58s 29ms/step - loss: 0.0206 - masked_acc: 0.9934 - masked_loss: 0.0206 - val_loss: 0.0243 - val_masked_acc: 0.9925 - val_masked_loss: 0.0243
+Epoch 27/100
+2000/2000 [==============================] - 60s 30ms/step - loss: 0.0197 - masked_acc: 0.9936 - masked_loss: 0.0197 - val_loss: 0.0238 - val_masked_acc: 0.9928 - val_masked_loss: 0.0238
+[ ]
+
+
+
+Performance on Test data:
+
+Accuracy:  0.9001733333333334
+
+2) Architecture of the model:
+
+
+Model: "translator"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ encoder (Encoder)           multiple                  802304    
+                                                                 
+ decoder_1 (Decoder)         multiple                  684082    
+                                                                 
+=================================================================
+Total params: 1486386 (5.67 MB)
+Trainable params: 1486386 (5.67 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
