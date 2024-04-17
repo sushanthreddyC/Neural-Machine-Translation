@@ -3,11 +3,13 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 import re
 import tensorflow as tf
-import tensorflow_text 
+import tensorflow_text
 
 app=Flask(__name__)
 
-model = pickle.load(open('translator.pkl','rb'))
+
+
+model = tf.saved_model.load('translator')
 
 @app.route('/')
 def home():
@@ -23,13 +25,16 @@ def predict():
         out=' '
         return out.join(re.findall(v_ptr,s))
 
-    function_ = str(request.form.values())
-    tokenized_function = tokenize(function_)
+    function_ = [str(x) for x in  request.form.values()]
+    print("recieved function :", function_[0])
+    tokenized_function = tokenize(function_[0])
+    print("tokenized function :", tokenized_function)
     predictions= model.translate(tf.constant([tokenized_function]))
     predicted_value = predictions[0].numpy().decode()
     predicted_value = re.sub(r'\s+', '', predicted_value)
-
-    return render_template('index.html', predicted__text= 'Derivative of the given function is ${}'.format(predicted_value))
+    print("predicted value: ", predicted_value)
+    prediction_text = 'Derivative of ' + function_[0] + ' = ' + predicted_value
+    return render_template('index.html', prediction_text =  prediction_text)
 
 # @app.route('/predict_api', methods=['POST'])
 # def predict_api():
