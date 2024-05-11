@@ -1,6 +1,5 @@
 numpy
 pandas
-typing
 tensorflow-text
 tensorflow
 matplotlib
