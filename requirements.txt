@@ -6,8 +6,4 @@ tensorflow
 matplotlib
 einops
 scikit-learn
-notebook
-tqdm
-jupyterlab
-jupyterlab-code-formatter
-jupyterlab-latex
+
