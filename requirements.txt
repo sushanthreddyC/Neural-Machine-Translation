@@ -1,5 +1,8 @@
 numpy
 pandas
+typing
+tensorflow-text
 tensorflow
+matplotlib
+einops
 scikit-learn
-
