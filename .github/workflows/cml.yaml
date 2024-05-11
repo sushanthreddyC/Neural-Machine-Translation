@@ -18,7 +18,7 @@ jobs:
       - name: Evaluate model
         run: |
           # Your ML workflow goes here
-          source setup.sh
+          pip install -r requirements.txt
           python3 main.py
       - name: Write CML report
         env:
